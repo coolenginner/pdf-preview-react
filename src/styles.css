@@ -1,0 +1,135 @@
+.landingpage{
+  background: grey;
+  height: 100vh;
+}
+.card-page{
+  margin: 100px;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+body {
+	font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+	height: 100%;
+  width: 277px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0px;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+    padding: 35px;
+}
+
+.sidenav a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+}
+
+.sidenav a:hover {
+	color: #fff;
+	background: white;
+}
+
+.main {
+	
+	font-size: 28px;
+	/* Increased text to enable scrolling */
+	padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+	.sidenav a {
+		font-size: 18px;
+	}
+}
+a {
+    color: #92827f;}
+a:not([href]):not([tabindex]) {
+	color: #fff;
+	text-decoration: none;
+	padding: 20px;
+}
+
+.add-background {
+  height: 100vh;
+  
+}
+
+.items {
+	padding: 10px;
+	background: #111111;
+	text-align: center;
+	color: #fff;
+}.btn-primary {
+    color: #fff;
+    background-color: #111111;
+    border-color: #111111;
+}
+.rightbutton{
+	text-align: right;
+}
+.text-sidebar{
+	color: #fff;
+	font-size: 20px;
+}
+.react-pdf__message.react-pdf__message--no-data {
+    display: none;
+}
+.items-pdf {
+	background: #e8e8e800;
+    height: 15px;
+}
+.text-sidebar {
+  color: #fff !important;
+  font-size: 20px;
+}
+
+.Apps{
+  background: #fff;
+}
+canvas {
+    width: 80% !important;
+    height: auto !important;
+  }
+
+  .Apps canvas{
+	  width: 500px !important;
+	  height: 180px !important;
+
+  }
+
+  .upload-btn-wrapper {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+  }
+  
+  .btn {
+	border: 2px solid gray;
+	color: gray;
+	background-color: white;
+	padding: 8px 20px;
+	border-radius: 8px;
+	font-size: 20px;
+	font-weight: bold;
+  }
+  
+  .upload-btn-wrapper input[type=file] {
+	font-size: 100px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+  }
