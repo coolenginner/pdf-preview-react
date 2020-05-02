@@ -8,6 +8,7 @@ import * as jsPDF from "jspdf";
 import * as html2canvas from "html2canvas";
 import $ from "jquery";
 import SignaturePad from "react-signature-canvas";
+import { Route, Link, BrowserRouter as Router, Switch } from "react-router-dom";
 
 function Sign(props) {
   const [trimmedDataURL, setTrimmedDataURL] = useState(null);
@@ -178,6 +179,17 @@ function Sign(props) {
             <div className="add-background">
               <div className="row">
                 <div className="col-md-6">
+                  <Link
+                    to={{
+                      pathname: "/Upload",
+                    }}
+                  >
+                    <button class="btn btn-primary btn-lg mx-auto">
+                      Upload Pdf
+                    </button>
+                  </Link>
+                </div>
+                <div className="col-md-6">
                   <button
                     onClick={handlePdf}
                     className="btn btn-primary btn-lg mx-auto"
@@ -185,29 +197,22 @@ function Sign(props) {
                     Generate PDF
                   </button>
                 </div>
-
-                <div className="col-md-6"></div>
               </div>
               <div className="items-pdf"></div>
               <div className="canvas_div_pdf">
-             
-                  <Document
-                    file={props.location.file}
-                    onLoadSuccess={onDocumentLoadSuccess}
-                    noData={
-                      <h4 className="success-file">
-                        <p> Please select a file</p>
-                      </h4>
-                    }
-                  >   {props.location.file && (
-                    <div>
-  {Pagelist.map((page) => (
-                      <Page pageNumber={page} />
-                    ))}
-                    </div>
-                    )}
-                  </Document>
-              
+                <Document
+                  file={props.location.file}
+                  onLoadSuccess={onDocumentLoadSuccess}
+                  noData={
+                    <h4 className="success-file">
+                      <p> Please select a file</p>
+                    </h4>
+                  }
+                >
+                  {Pagelist.map((page) => (
+                    <Page pageNumber={page} />
+                  ))}
+                </Document>
 
                 {props.location.dragitems.map((item) => {
                   return (

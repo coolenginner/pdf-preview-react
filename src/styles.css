@@ -89,7 +89,7 @@ a:not([href]):not([tabindex]) {
 }
 .items-pdf {
 	background: #e8e8e800;
-    height: 15px;
+    height: 75px;
 }
 .text-sidebar {
   color: #fff !important;
@@ -100,7 +100,7 @@ a:not([href]):not([tabindex]) {
   background: #fff;
 }
 canvas {
-    width: 80% !important;
+    width: 100% !important;
     height: auto !important;
   }
 
@@ -133,3 +133,48 @@ canvas {
 	top: 0;
 	opacity: 0;
   }
+
+  @media (max-width: 1500px){
+	.container {
+		max-width: 1000px;
+	}
+	.main {
+		font-size: 28px;
+		padding: 0px 58px;
+	}
+  }
+  @media (max-width: 1300px){
+	.container {
+		max-width: 860px;
+	}
+	.main {
+		padding: 0px 58px;
+	}
+  }
+
+  @media (max-width: 1024px){
+	.container {
+		max-width: 1000px;
+	}
+	.main {
+		padding: 0px 140px;
+	}
+	.sidenav{
+		width: 200px;
+
+	}
+  }
+
+  @media (max-width: 800px){
+	.container {
+		max-width: 1000px;
+	}
+	.main {
+		padding: 0px 140px;
+	}
+	.sidenav{
+		width: 200px;
+
+	}
+  }
+

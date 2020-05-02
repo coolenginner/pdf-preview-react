@@ -17,7 +17,7 @@ function About() {
           <div className="col-md-6 card">
             <a
               className="mx-auto">
-              <Link to="/Upload">Sign Pdf</Link>
+              <Link to="/Sign">Sign Pdf</Link>
               </a>
           </div>
         </div>

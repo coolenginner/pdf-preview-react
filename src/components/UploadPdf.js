@@ -59,7 +59,20 @@ function Upload() {
           <Droppable types={["dragitems"]} onDrop={onDrop}>
             <div className="add-background">
               <div className="row">
-                <div className="col-md-6">
+                <div className="col-md-4">
+                  <div class="upload-btn-wrapper">
+                    <Link
+                      to={{
+                        pathname: "/",
+                      }}
+                    >
+                      <button class="btn btn-primary btn-lg mx-auto">
+                        Home
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+                <div className="col-md-4">
                   <Form>
                     <div class="upload-btn-wrapper">
                       <button class="btn">Upload PDF</button>
@@ -72,22 +85,22 @@ function Upload() {
                   </Form>
                 </div>
 
-                <div className="col-md-6">
+                <div className="col-md-4">
                   <Form>
                     <div class="upload-btn-wrapper">
                       {addfile && (
-                        <button class="btn">
-                          <Link
-                            to={{
-                              pathname: "/Sign",
+                        <Link
+                          to={{
+                            pathname: "/Sign",
 
-                              file: addfile,
-                              dragitems: dragitem,
-                            }}
-                          >
+                            file: addfile,
+                            dragitems: dragitem,
+                          }}
+                        >
+                          <button class="btn btn-primary btn-lg mx-auto">
                             Sign Pdf
-                          </Link>
-                        </button>
+                          </button>
+                        </Link>
                       )}
                     </div>
                   </Form>
